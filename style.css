@@ -1,30 +1,26 @@
-nav {
-  box-sizing: border-box;
-  /* margin-left: 9.075rem; */
-  margin-left: 2.4%;
-  padding-bottom: 1rem;
-  font-weight: 900;
-  font-size: 1.5em;
-  width: 40%;
-  border-bottom: 1px rgba(128, 128, 128, 0.479) solid;
-}
-
-div {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 3rem;
-}
-
-div:first-of-type {
-  margin-top: 2rem;
-}
-
-div img:nth-child(2) {
-  padding-left: 3rem;
-  padding-right: 3rem;
+body {
+  font-family: 'Raleway', sans-serif;
 }
 
 img {
-  max-width: 30%;
-  max-height: auto;
+  width: 30%;
+  /* 30% of the parent element */
+  /* If these are 30% each of the parent's width, their total percentage width is 90% */
+  /* 30 + 30 + 30 = 90 */
+
+  margin: calc(10% / 6.3);
+  /* calc here determines what the margin/etc will be based on math passed within the parenthesis*/
+
+  /* margin: 1.6666%; */
+  /* To divide the remaining 10% space, divide 10% by 6 (Two sides, left and right) for 1.66666666666~ */
+}
+
+nav {
+  text-transform: uppercase;
+  border-bottom: 2px solid #f1f1f1;
+  width: 30%;
+  margin-left: calc(10% / 6.3);
+  padding: 1.2em 0;
+  font-size: 1.3em;
+  font-weight: 900;
 }

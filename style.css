@@ -8,7 +8,7 @@ img {
   /* If these are 30% each of the parent's width, their total percentage width is 90% */
   /* 30 + 30 + 30 = 90 */
 
-  margin: calc(10% / 6.3);
+  margin: calc(10% / 6);
   /* calc here determines what the margin/etc will be based on math passed within the parenthesis*/
 
   /* margin: 1.6666%; */
@@ -19,7 +19,7 @@ nav {
   text-transform: uppercase;
   border-bottom: 2px solid #f1f1f1;
   width: 30%;
-  margin-left: calc(10% / 6.3);
+  margin-left: calc(10% / 6);
   padding: 1.2em 0;
   font-size: 1.3em;
   font-weight: 900;
